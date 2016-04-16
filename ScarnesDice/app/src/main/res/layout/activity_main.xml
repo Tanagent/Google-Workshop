@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tanagent.brian.com.scarnesdice.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_user_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Score: "/>
+
+        <TextView
+            android:layout_toRightOf="@+id/txt_user_score"
+            android:id="@+id/user_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/txt_comp_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer Score: "/>
+
+        <TextView
+            android:id="@+id/comp_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/dice1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROLL"/>
+
+        <Button
+            android:id="@+id/btn_hold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOLD"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"/>
+
+    </LinearLayout>
+</LinearLayout>
