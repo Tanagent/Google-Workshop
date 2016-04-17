@@ -22,23 +22,59 @@
             android:text="Your Score: "/>
 
         <TextView
-            android:layout_toRightOf="@+id/txt_user_score"
             android:id="@+id/user_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"/>
+            android:layout_toRightOf="@+id/txt_user_score"
+            android:text="0 "/>
 
         <TextView
             android:id="@+id/txt_comp_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_score"
             android:text="Computer Score: "/>
 
         <TextView
             android:id="@+id/comp_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"/>
+            android:layout_toRightOf="@+id/txt_comp_score"
+            android:text="0 " />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_user_overall_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Overall Score: "/>
+
+        <TextView
+            android:id="@+id/user_overall_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_user_overall_score"
+            android:text="0 "/>
+
+        <TextView
+            android:id="@+id/txt_comp_overall_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_overall_score"
+            android:text="Computer Score: "/>
+
+        <TextView
+            android:id="@+id/comp_overall_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_comp_overall_score"
+            android:text="0 "/>
 
     </RelativeLayout>
 
