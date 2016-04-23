@@ -121,7 +121,8 @@ public class MainActivity extends AppCompatActivity {
                 int dieRoll = rollDie();
                 Log.i("Comp Die Roll", String.valueOf(Arrays.asList(FACE_OF_DICE).indexOf(dieRoll) + 1));
 
-                if(count < 20){
+                Log.i("count", String.valueOf(count));
+                if(count < 10){
                     if(dieRoll != FACE_OF_DICE[0]){
                         comp_turnScore += Arrays.asList(FACE_OF_DICE).indexOf(dieRoll) + 1;
                     } else {
@@ -133,14 +134,22 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     compScore.setText(comp_turnScore + " ");
+                } else {
+                    comp_overallScore += comp_turnScore;
+
+                    Log.i("Comp Overall Score", String.valueOf(comp_overallScore));
+
+                    compScore.setText(comp_turnScore + " ");
+                    rollBtn.setEnabled(true);
+                    holdBtn.setEnabled(true);
+                    return;
                 }
 
                 comp_overallScore += comp_turnScore;
+;
 
-                Log.i("Comp Overall Score", String.valueOf(comp_overallScore));
-
-                rollBtn.setEnabled(true);
-                holdBtn.setEnabled(true);
+//                rollBtn.setEnabled(true);
+//                holdBtn.setEnabled(true);
 
                 timerHandler.postDelayed(this, 500);
 
